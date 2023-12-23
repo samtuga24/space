@@ -1509,7 +1509,7 @@ button{
     }
     .cards-wrapper{
         flex-direction: column;
-        width: 90%;
+        width: 96%;
     }
     .first{
         margin-right: 0vw;
