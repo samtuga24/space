@@ -645,11 +645,27 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3vh;
-    padding-left: 2vw;
+    margin-top: 10vh;
 }
 .check-2-image{
-    width: 95%;
+    width: 100%;
+}
+.check-button{
+    font-family: Montserrat;
+    width: 6.5vw;
+    height: 5vh; 
+    padding: 1vh 1.5vw 1vh 1.5vw;
+    border-radius: 0.5vw;
+    background: #040404;
+    width: fit-content;
+    margin-top: 5vh;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw; 
+    font-weight: 600;
+    margin-left: 54%;
 }
 .check-2-image img{
     width: 100%;
@@ -1679,6 +1695,17 @@ button{
         width: 60vw;
     }
 
+    .check-button{
+        font-family: Montserrat;
+        width: 96%;
+        height: 5vh; 
+        border-radius: 2vw;
+        background: #040404;
+        margin-top: 5vh;
+        margin-left: 0%;
+        font-size: 4vw; 
+        margin-right: 0vw;
+    }
     /* ########create-card */
     .create-card-container{
     }

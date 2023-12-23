@@ -4,12 +4,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 export default function Introduction() {
   const headerRef = useRef();
-  useEffect(()=>{
-    const el = headerRef.current;
-    gsap.fromTo('.intro-header', {scale: 0},{ scale: 1, ease:"back-in", duration: 2, scrollTrigger:{
-      trigger: el,
-    }})
-  },[])
+  // useEffect(()=>{
+  //   const el = headerRef.current;
+  //   gsap.fromTo('.intro-header', {scale: 0},{ scale: 1, ease:"back-in", duration: 2, scrollTrigger:{
+  //     trigger: el,
+  //   }})
+  // },[])
 
   return (
     <div className='intro-container intro' ref={headerRef}>

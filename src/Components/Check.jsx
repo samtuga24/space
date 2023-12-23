@@ -6,12 +6,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 export default function Check() {
     const headerRef = useRef();
-    useEffect(()=>{
-        const el = headerRef.current;
-        gsap.fromTo('.service-1, .service-2', {scale: 0},{ scale: 1, ease:"back-in", stagger: 0.2, duration: 2, scrollTrigger:{
-          trigger: el,
-        }})
-      },[])
+    // useEffect(()=>{
+    //     const el = headerRef.current;
+    //     gsap.fromTo('.service-1, .service-2', {scale: 0},{ scale: 1, ease:"back-in", stagger: 0.2, duration: 2, scrollTrigger:{
+    //       trigger: el,
+    //     }})
+    //   },[])
     return (
         <div className='check-container' ref={headerRef}>
             <div className='check-wrapper'>
@@ -34,6 +34,7 @@ export default function Check() {
                         </div>
                     </div>
                 </div>
+                <div className='check-button'>Get Started</div>
             </div>
         </div>
     )

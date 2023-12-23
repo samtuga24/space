@@ -7,12 +7,12 @@ import third from '../images/third.svg'
 gsap.registerPlugin(ScrollTrigger)
 export default function Cards() {
     const headerRef = useRef();
-    useEffect(()=>{
-      const el = headerRef.current;
-      gsap.fromTo('.first, .second, .third', {y: 100},{ y: 0, ease:"back-in", stagger:0.2, duration: 2.2, scrollTrigger:{
-        trigger: el,
-      }})
-    },[])
+    // useEffect(()=>{
+    //   const el = headerRef.current;
+    //   gsap.fromTo('.first, .second, .third', {y: 100},{ y: 0, ease:"back-in", stagger:0.2, duration: 2.2, scrollTrigger:{
+    //     trigger: el,
+    //   }})
+    // },[])
     return (
         <div className='cards-container' ref={headerRef}>
             <div className='cards-wrapper'>
