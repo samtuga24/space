@@ -1,4 +1,5 @@
 import React from 'react'
+import call from '../images/call.svg'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

@@ -344,6 +344,7 @@ button{
 .card-wrapper{
     width: 100%;
     display: flex;
+    margin-top: 10vh;
 }
 .card-header{
     font-family: Montserrat;
@@ -763,6 +764,7 @@ button{
 .contact-list-1{
     display: flex;
     margin-top: 2vh;
+    align-items: center;
 }
 .contact-header{
     font-family: Montserrat;
@@ -772,7 +774,7 @@ button{
 }
 .contact-icon{
     font-size: 1.5vw;
-    color: #DDDDDD;
+    color: #FFFFFF;
 }
 .contact-icon-desc{
     font-family: Montserrat;
@@ -1195,14 +1197,15 @@ button{
     }
     .title-wrapper{
         width: 50vw;
-        flex: 1.2;
+        flex: 1.5;
         margin-left: 5vw;
     }
     .title{
         font-size: 4.5vw;
+        width: 100%;
     }
     .nav-list-container{
-        flex: 1.8;
+        flex: 1.5;
         margin-right: 0;
     }
     .logo-wrapper{
@@ -1248,6 +1251,7 @@ button{
         flex-direction: column;
         width: 100%;
         align-items: center;
+        margin-top: 6vh;
     }
     .card-header{
         font-family: Montserrat;
@@ -1902,6 +1906,6 @@ button{
 
 @media screen and (width: 912px) and (max-height: 1180px){
     .title{
-        color: red;
+        /* color: red; */
     }
 }
