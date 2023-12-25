@@ -1,5 +1,7 @@
 import React from 'react'
 import call from '../images/call.svg'
+import location from  '../images/location.svg'
+import mail from '../images/mail.svg'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -35,15 +37,15 @@ export default function Footer() {
                     <div className='contact-header'>Contact</div>
                     <div className='contact-list-wrap'>
                         <div className='contact-list-1'>
-                            <div className='contact-icon'><FontAwesomeIcon icon={faEnvelope} /></div>
+                            <div className='contact-icon'><img src={call} alt="" /></div>
                             <div className='contact-icon-desc'>(406) 555-0120</div>
                         </div>
                         <div className='contact-list-1'>
-                            <div className='contact-icon'><FontAwesomeIcon icon={faEnvelope} /></div>
+                            <div className='contact-icon'><img src={mail} alt="" /></div>
                             <div className='contact-icon-desc'>support@alpha.africa</div>
                         </div>
                         <div className='contact-list-1'>
-                            <div className='contact-icon'><FontAwesomeIcon icon={faEnvelope} /></div>
+                            <div className='contact-icon'><img src={location} alt="" /></div>
                             <div className='contact-icon-desc'>Wyoming,USA</div>
                         </div>
                     </div>

@@ -773,8 +773,13 @@ button{
     color: #FFFFFF;
 }
 .contact-icon{
-    font-size: 1.5vw;
-    color: #FFFFFF;
+    width: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-icon img{
+    width: 100%;
 }
 .contact-icon-desc{
     font-family: Montserrat;
@@ -1363,7 +1368,7 @@ button{
         margin-top: 5vh;
     }
     .contact-icon{
-        font-size: 4vw;
+        width: 5vw;
     }
     .contact-icon-desc{
         font-family: Montserrat;
@@ -1371,6 +1376,7 @@ button{
         font-size: 4vw;
         margin-left: 1vw;
         color: #DDDDDD;
+        margin-left: 3vw;
     }
     .service-container{
         display: flex;
