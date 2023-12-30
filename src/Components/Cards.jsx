@@ -1,20 +1,23 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import first from '../images/first.svg'
 import second from '../images/second.svg'
 import third from '../images/third.svg'
-gsap.registerPlugin(ScrollTrigger)
 export default function Cards() {
-    const headerRef = useRef();
-    // useEffect(()=>{
-    //   const el = headerRef.current;
-    //   gsap.fromTo('.first, .second, .third', {y: 100},{ y: 0, ease:"back-in", stagger:0.2, duration: 2.2, scrollTrigger:{
-    //     trigger: el,
-    //   }})
-    // },[])
+    gsap.registerPlugin(ScrollTrigger)
+    useLayoutEffect(()=>{
+        const tl = gsap.timeline()
+      tl.fromTo('.first, .second, .third', {y: 100},
+      {
+        scrollTrigger:{
+            trigger:".cards-container"
+        },
+      y: 0, ease:"power4.inOut", stagger:0.3, duration: 2.2,
+    })
+    },[])
     return (
-        <div className='cards-container' ref={headerRef}>
+        <div className='cards-container'>
             <div className='cards-wrapper'>
                 <div className='first'>
                     <div className='first-image'>

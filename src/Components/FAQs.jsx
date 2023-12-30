@@ -77,10 +77,8 @@ export default function FAQs() {
         setDown6(true)
     }
 
-
-    console.log(up)
     return (
-        <div className='faqs-container'>
+        <div className='faqs-container' id='faqs'>
             <div className='faqs-wrapper'>
                 <div className='faqs-header'>Frequently asked questions</div>
                 <div className='faqs'>

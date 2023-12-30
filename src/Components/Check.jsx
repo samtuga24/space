@@ -5,15 +5,13 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 export default function Check() {
-    const headerRef = useRef();
-    // useEffect(()=>{
-    //     const el = headerRef.current;
-    //     gsap.fromTo('.service-1, .service-2', {scale: 0},{ scale: 1, ease:"back-in", stagger: 0.2, duration: 2, scrollTrigger:{
-    //       trigger: el,
-    //     }})
-    //   },[])
+    useEffect(()=>{
+        const tl = gsap.timeline()
+        tl.fromTo('.check-header',{opacity:0.2},{opacity:1,duration:2.2})
+        tl.fromTo('.check-1, .check-2', {y: 100},{ y: 0, ease:"power4.inOut", stagger: 0.2, duration: 2.2},"<")
+      },[])
     return (
-        <div className='check-container' ref={headerRef}>
+        <div className='check-container'>
             <div className='check-wrapper'>
                 <div className='check-header'>Check this out</div>
                 <div className='check'>

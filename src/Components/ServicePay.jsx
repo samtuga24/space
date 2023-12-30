@@ -10,9 +10,12 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 export default function ServicePay() {
-    const headerRef = useRef();
+    useEffect(()=>{
+        const tl = gsap.timeline()
+        tl.fromTo('.service-1', {y: 100},{ y: 0, ease:"power4.inOut", stagger: 0.2, duration: 2.2})
+      },[])
     return (
-        <div className='service-container' ref={headerRef}>
+        <div className='service-container'>
             <div className='service-wrapper'>
                 <div className='service-1'>
                     <div className='service-1-image'>

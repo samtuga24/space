@@ -3,6 +3,7 @@ import logo from '../logo/logo.svg'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import NavContext from '../context/NavContext';
+import { Link } from 'react-scroll';
 export default function NavBar(props) {
     const {hamburger, setHamburger} = useContext(NavContext);
     const clickHamburger = () =>{
@@ -24,7 +25,7 @@ export default function NavBar(props) {
                                 <li>About Us</li>
                                 <li>Features</li>
                                 <li>Contact Us</li>
-                                <li>FAQ</li>
+                                <li><Link to='faqs' spy={false} smooth={true} offset={100} duration={800}>FAQ</Link></li>
                             </ul>
                         </div>
                         <div className='nav-buttons'>

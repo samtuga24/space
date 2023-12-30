@@ -12,21 +12,49 @@
     font-family: MontserratBold;
     src: local('Montserrat'), url(./fonts/Montserrat/Montserrat-Bold.ttf) format('truetype');
   }
-body{
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
+body{
+    /* animation: custom 5s infinite; */
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+}
+/* @keyframes custom{
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: black;
+    }
+    100%{
+        background-color: blue;
+    }
+} */
 .home-wrapper{
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
-.navbar-container{
+.home-navbar{
     position: sticky;
+    top: 0;
     width: 100%;
+    z-index: 1; 
+}
+.section{
+    position: sticky;
+    top: 10vh;
+    width: 100%;
+    z-index: -2;
+}
+
+.navbar-container{
     height: fit-content;
     cursor: default;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);   
 }
 .navbar-wrapper{
     display: flex;
@@ -601,6 +629,7 @@ button{
   background: #EAEDF0;
   height: 100vh;
   margin-right: 4%;
+  padding-top: 5vh;
 }
 .check-2{
     width: 48%;
@@ -676,6 +705,7 @@ button{
     padding-top: 5vh;
     padding-bottom: 5vh;
     background: #56037C;
+    cursor: default;
 }
 .footer-wrapper{
     display: flex;
@@ -794,16 +824,18 @@ button{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-top: 10vw;
+    background-color: #FFFFFF;
 }
 .service-wrapper{
     width: 84%;
     display: flex;
+    height: inherit;
+    padding-top: 10vh;
 }
 .service-1{
     border-radius: 1.5vw;
     background: #BAC1B2;
-    height: 100vh;
+    height: inherit;
     width: 48%;
     margin-right: 4%;
 }
@@ -832,7 +864,7 @@ button{
     border-radius: 1.5vw;
     box-shadow: 0px 20px 60px 0px #0000000D;
     background: #212121;
-    height: 100vh;
+    height: inherit;
     width: 48%;
 }
 .service-2-header{
@@ -871,8 +903,9 @@ button{
     flex-direction: column;
     align-items: center;
     height: fit-content;
-    margin-top: 10vw;
+    padding-top: 10vw;
     padding-bottom: 12vw;
+    background-color: #FFFFFF;
 }
 .faqs-wrapper{
     width: 84%;
@@ -981,15 +1014,14 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10vw;
-    
+    padding-top: 10vw;
 }
 .general-wrapper{
+    background-color: #FFFFFF;
     width: 84%;
     border-radius: 1.5vw;
     padding-top: 3vw;
     padding-bottom: 2vw;
-    border: 1px solid #00000017;
     box-shadow: 0px 20px 60px 0px #0000000D;
     box-shadow: 0px 4px 12.699999809265137px 0px #00000040;
 
@@ -1385,6 +1417,7 @@ button{
         justify-content: center;
         height: 100vh;
         margin-top: 10vh;
+        height: fit-content;
     }
     .service-wrapper{
         width: 84%;
@@ -1624,9 +1657,6 @@ button{
     }
 
     /* #######service-pay */
-    .service-container{
-        height: fit-content;
-    }
     .service-wrapper{
         width: 96%;
         flex-direction: column;

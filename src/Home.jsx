@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Cards from './Components/Cards'
 import NavBar from './Components/NavBar'
 import Introduction from './Components/Introduction'
@@ -12,23 +12,26 @@ import ServicePay from './Components/ServicePay'
 import FAQs from './Components/FAQs'
 import Footer from './Components/Footer'
 import MobileNav from './Components/MobileNav'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 export default function Home() {
     return (
         <>
             <div className='home-wrapper'>
-                <NavBar/>
-                <Introduction/>
-                <Cards />
-                <GetStarted/>
-                <Choose />
-                <CreateCard/>
-                <Check/>
-                <VirtualCard/>
-                <General/>
-                <ServicePay/>
-                <FAQs/>
-                <Footer/>
-                <MobileNav/>
+                <div className='home-navbar'><NavBar/></div>
+                <div><Introduction/></div>
+                <div><Cards/></div>
+                <div><GetStarted/></div>
+                <div><Choose /></div>
+                <div><CreateCard/></div>
+                <div><Check/></div>
+                <div className='section'><VirtualCard/></div>
+                <div><General/></div>
+                <div><ServicePay/></div>
+                <div><FAQs/></div>
+                <div><Footer/></div>
+                <div><MobileNav/></div>
+                <div></div>
             </div>
         </>
     )
