@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import cards from '../images/cards.svg'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export default function VirtualCard() {
     return (
         <div className='virtual-container'>
@@ -12,7 +13,7 @@ export default function VirtualCard() {
                     </div>
                     <div className='virtual-steps-wrap'>
                         <div className='virtual-steps'>Get your virtual card in easy steps</div>
-                        <div className='steps-icon'><FontAwesomeIcon icon={faArrowRight}/></div>
+                        <div className='steps-icon'><FontAwesomeIcon icon={faArrowRight} /></div>
                     </div>
                 </div>
                 <div className='virtual-image-wrap'>

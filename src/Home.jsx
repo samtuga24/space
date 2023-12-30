@@ -14,10 +14,12 @@ import Footer from './Components/Footer'
 import MobileNav from './Components/MobileNav'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 export default function Home() {
+    
     return (
         <>
-            <div className='home-wrapper'>
+                <div className='home-wrapper'>
                 <div className='home-navbar'><NavBar/></div>
                 <div><Introduction/></div>
                 <div><Cards/></div>
@@ -26,13 +28,13 @@ export default function Home() {
                 <div><CreateCard/></div>
                 <div><Check/></div>
                 <div className='section'><VirtualCard/></div>
-                <div><General/></div>
+                <div className='general'><General/></div>
                 <div><ServicePay/></div>
                 <div><FAQs/></div>
                 <div><Footer/></div>
                 <div><MobileNav/></div>
                 <div></div>
-            </div>
+                </div>
         </>
     )
 }
