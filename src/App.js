@@ -23,10 +23,10 @@ function App() {
         <div><Introduction /></div>
         <div><Cards /></div>
         <div><GetStarted /></div>
-        <div><Choose /></div>
+        <div className='section'><Choose /></div>
         <div><CreateCard /></div>
         <div><Check /></div>
-        <div className='section'><VirtualCard /></div>
+        <div><VirtualCard /></div>
         <div className='general'><General /></div>
         <div><ServicePay /></div>
         <div className='fa'><FAQs /></div>
