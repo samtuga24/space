@@ -2,6 +2,7 @@ import React from 'react'
 import group from '../images/group.svg'
 import five from '../images/five.svg'
 import six from '../images/six.svg'
+import { Carousel } from 'react-bootstrap'
 export default function GetStarted(props) {
     return (
         <div className='get-started-container'>
@@ -17,9 +18,22 @@ export default function GetStarted(props) {
                 </div>
 
                 <div className='get-started-image-mobile-wrap'>
-                    <img src={five} alt="" />
-                    <img src={six} alt="" />
+
+                    <Carousel data-bs-theme="dark">
+                        <Carousel.Item>
+                            <img src={five} alt="" />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img src={six} alt="" />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
                 </div>
+
+
             </div>
         </div>
     )

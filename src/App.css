@@ -331,7 +331,6 @@ button{
     width: 98%;
 }
 .get-started-image-mobile-wrap{
-    border: 2px solid black;
     display: none;
 }
 
@@ -1669,10 +1668,10 @@ button{
         display: none;
     }
     .get-started-image-mobile-wrap{
-        border: 2px solid black;
+
         display: block;
-        height: 35vh;
-        overflow-y: scroll;
+        /* height: 35vh; */
+        /* overflow-y: scroll; */
         margin-top: 5vh;
     }
     .get-started-image-mobile-wrap img{
