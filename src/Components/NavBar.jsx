@@ -16,7 +16,6 @@ export default function NavBar(props) {
                     <div className='logo-wrapper'>
                         <img src={logo} alt="" />
                     </div>
-                    <div className='title'>Alpha Space</div>
                 </div>
                 <div className='nav-list-container'>
                     <div className='nav-list-wrapper'>

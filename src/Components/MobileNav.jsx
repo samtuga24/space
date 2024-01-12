@@ -16,7 +16,6 @@ export default function MobileNav() {
                     <div className='mobile-logo'>
                         <img src={logo} alt="" />
                     </div>
-                    <div className='mobile-title'>Alpha Space</div>
                     <div className='mobile-close-button' onClick={clickCancel}>
                         <FontAwesomeIcon icon={faXmark} className='close-icon' />
                     </div>

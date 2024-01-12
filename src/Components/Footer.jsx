@@ -2,6 +2,7 @@ import React from 'react'
 import call from '../images/call.svg'
 import location from  '../images/location.svg'
 import mail from '../images/mail.svg'
+import foot from '../logo/foot-logo.svg'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,8 +12,9 @@ export default function Footer() {
             <div className='footer-wrapper'>
                 <div className='footer-desc-wrap'>
                     <div className='footer-desc-header-wrap'>
-                        <div className='footer-desc-logo'></div>
-                        <div className='footer-desc-header'>Alpha Space</div>
+                        <div className='footer-desc-logo'>
+                            <img src={foot} alt="" />
+                        </div>
                     </div>
                     <div className='footer-desc'>
                         At Alpha Space we offer you platform that enables hassle-free virtual card creation through a dashboard or an API, anytime, anywhere for all your online payment.<br />All trademarks, logos and brand names are the property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, trademarks and brands does not imply endorsement.</div>

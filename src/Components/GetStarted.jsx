@@ -1,5 +1,7 @@
 import React from 'react'
-import four from '../images/four.svg'
+import group from '../images/group.svg'
+import five from '../images/five.svg'
+import six from '../images/six.svg'
 export default function GetStarted(props) {
     return (
         <div className='get-started-container'>
@@ -11,7 +13,12 @@ export default function GetStarted(props) {
                     </div>
                 </div>
                 <div className='get-started-image-wrap'>
-                    <img src={four} alt="" />
+                    <img src={group} alt="" />
+                </div>
+
+                <div className='get-started-image-mobile-wrap'>
+                    <img src={five} alt="" />
+                    <img src={six} alt="" />
                 </div>
             </div>
         </div>
