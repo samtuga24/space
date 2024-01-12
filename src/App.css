@@ -677,16 +677,16 @@ button{
     height: 6.5vh; 
     padding: 1vh 1.5vw 1vh 1.5vw;
     border-radius: 0.5vw;
-    background: #040404;
+    color: #040404;
     width: fit-content;
-    margin-top: 5vh;
-    color: #FFFFFF;
+    margin-top: 2vh;
+    background: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.1vw; 
     font-weight: 600;
-    margin-left: 54%;
+    margin-left: 2vw;
 }
 .check-2-image img{
     width: 100%;
@@ -697,6 +697,12 @@ button{
     padding-bottom: 5vh;
     background: #56037C;
     cursor: default;
+}
+.policy{
+    padding-left: 5vw;
+    position: absolute;
+    bottom: 3vh;
+    display: block;
 }
 .footer-wrapper{
     display: flex;
@@ -732,6 +738,7 @@ button{
 .footer-connect-wrap{
     flex: 1;
     padding-top: 2vh;
+    position: relative;
 }
 
 .connect-header{
@@ -761,11 +768,21 @@ button{
 .footer-service-wrap{
     flex: 1;
     padding-top: 2vh;
+    position: relative;
 }
 .service-list{
     padding-left: 5vw;
     margin-top: 0.5vh;
 }
+
+.p-list-item{
+    margin-bottom: 2vh;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: #FFFFFF;
+}
+
 
 .s-list-item{
     margin-bottom: 2vh;
@@ -1214,11 +1231,39 @@ button{
     color: #FFFFFF;
 }
 
+.policy-mobile-wrap{
+    display: none;
+    height: fit-content;
+    margin-top: 10vh;
+}
+.mobile-policy{
+}
+
+.service-policy{
+    margin-top: 5vh;
+}
+.policy-header{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: #FFFFFF;
+}
+.policy-desc{}
+
 
 /* ####################mobile view */
 @media screen and (max-width: 1020px) and (min-width:280px){
     body{
         /* background-color: red; */
+    }
+    .policy-header{
+        font-size: 4vw;
+    }
+    .policy{
+        display: none;
+    }
+    .policy-mobile-wrap{
+        display: block;
     }
     .hamburger-wrapper{
         display: flex;
@@ -1753,14 +1798,14 @@ button{
 
     .check-button{
         font-family: Montserrat;
-        width: 100%;
+        width: 96%;
         height: 6.5vh; 
         border-radius: 2vw;
-        background: #040404;
+        /* background: #040404; */
         margin-top: 5vh;
-        margin-left: 0%;
+        margin-left: 2%;
         font-size: 4vw; 
-        margin-right: 0%;
+        margin-right: 2%;
     }
     /* ########create-card */
     .create-card-container{

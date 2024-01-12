@@ -30,9 +30,10 @@ export default function Check() {
                                 <img src={check} alt="" />
                             </div>
                         </div>
+                        <div className='check-button'>Get Started</div>
                     </div>
                 </div>
-                <div className='check-button'>Get Started</div>
+                
             </div>
         </div>
     )
