@@ -1664,17 +1664,6 @@ button{
         padding-left: 5%;
         padding-right: 5%;
         margin-left: 0%;
-        display: none;
-    }
-    .get-started-image-mobile-wrap{
-
-        display: block;
-        /* height: 35vh; */
-        /* overflow-y: scroll; */
-        margin-top: 5vh;
-    }
-    .get-started-image-mobile-wrap img{
-        width: 100%;
     }
     .get-started-image-wrap img{
         width: 100%;
