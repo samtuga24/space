@@ -21,10 +21,10 @@ export default function NavBar(props) {
                     <div className='nav-list-wrapper'>
                         <div className='nav-list'>
                             <ul>
-                                <li>About Us</li>
-                                <li>Features</li>
-                                <li>Contact Us</li>
-                                <li><Link to='faqs' spy={false} smooth={true} offset={100} duration={800}>FAQ</Link></li>
+                                <li><Link to='footer' spy={false} smooth={true} offset={100} duration={800}>About Us</Link></li>
+                                <li><Link to='create' spy={false} smooth={true} offset={-100} duration={800}>Features</Link></li>
+                                <li><Link to='footer' spy={false} smooth={true} offset={100} duration={800}>Contact Us</Link></li>
+                                <li><Link to='faqs' spy={false} smooth={true} offset={10} duration={800}>FAQ</Link></li>
                             </ul>
                         </div>
                         <div className='nav-buttons'>

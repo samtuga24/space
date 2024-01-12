@@ -4,7 +4,7 @@ import standard from '../images/standard.svg'
 export default function CreateCard(props) {
 
     return (
-        <div className='create-card-container'>
+        <div className='create-card-container' id='create'>
             <div className='create-card-wrapper'>
                 <div className='create-card-header'>Create your Card</div>
                 <div className='create-card'>

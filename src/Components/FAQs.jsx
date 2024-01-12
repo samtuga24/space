@@ -85,7 +85,7 @@ export default function FAQs() {
                     <div className='faqs-1-wrapper'>
                         <div className='faqs-1'>
                             <div className='faqs-row-1'>
-                                <div className='faqs-row-1-header'>What is Card Hub?</div>
+                                <div className='faqs-row-1-header'>What is alphaspace?</div>
                                 <div className='angle-icon-wrap'>
                                     <div className='faqs-row-1-icon' id={down ? 'show-arrow' : 'hide-arrow'} onClick={clickDown}><FontAwesomeIcon icon={faAngleDown} /></div>
                                     <div className='faqs-row-1-icon-up' id={up ? 'show-arrow' : 'hide-arrow'} onClick={clickUp}><FontAwesomeIcon icon={faAngleUp} /></div>
@@ -93,15 +93,14 @@ export default function FAQs() {
                             </div>
                             {up &&
                                 <div className='faqs-row-1-desc'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet odio leo.
-                                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    Alphaspace is a secured platform that enables hassle-free virtual card creation through a dashboard or an API, anytime, anywhere for all your online payment.
                                 </div>
                             }
                         </div>
 
                         <div className='faqs-1'>
                             <div className='faqs-row-1'>
-                                <div className='faqs-row-1-header'>What is Card Hub?</div>
+                                <div className='faqs-row-1-header'>What types of accounts are available on alphaspace?</div>
                                 <div className='angle-icon-wrap'>
                                     <div className='faqs-row-1-icon' id={down2 ? 'show-arrow' : 'hide-arrow'} onClick={clickDown2}><FontAwesomeIcon icon={faAngleDown} /></div>
                                     <div className='faqs-row-1-icon-up' id={row2 ? 'show-arrow' : 'hide-arrow'} onClick={clickRow2}><FontAwesomeIcon icon={faAngleUp} /></div>
@@ -109,15 +108,14 @@ export default function FAQs() {
                             </div>
                             {row2 &&
                                 <div className='faqs-row-1-desc'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet odio leo.
-                                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    You are at liberty to create either an individual account or a company account or both. Note, you are not allowed to created more than one individual account.
                                 </div>
                             }
                         </div>
 
                         <div className='faqs-1'>
                             <div className='faqs-row-1'>
-                                <div className='faqs-row-1-header'>What is Card Hub?</div>
+                                <div className='faqs-row-1-header'>How do I fund my master wallet?</div>
                                 <div className='angle-icon-wrap'>
                                     <div className='faqs-row-1-icon' id={down3 ? 'show-arrow' : 'hide-arrow'} onClick={clickDown3}><FontAwesomeIcon icon={faAngleDown} /></div>
                                     <div className='faqs-row-1-icon-up' id={row3 ? 'show-arrow' : 'hide-arrow'} onClick={clickRow3}><FontAwesomeIcon icon={faAngleUp} /></div>
@@ -125,8 +123,7 @@ export default function FAQs() {
                             </div>
                             {row3 &&
                                 <div className='faqs-row-1-desc'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet odio leo.
-                                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    You can fund your master wallet directly from your USDT-Tron wallet. Login to your dashboard and click on “Top Up” to begin.
                                 </div>
                             }
                         </div>
@@ -134,7 +131,7 @@ export default function FAQs() {
                     <div className='faqs-2-wrapper'>
                         <div className='faqs-1'>
                             <div className='faqs-row-1'>
-                                <div className='faqs-row-1-header'>What is Card Hub?</div>
+                                <div className='faqs-row-1-header'>What crypto currencies do you support?</div>
                                 <div className='angle-icon-wrap'>
                                     <div className='faqs-row-1-icon' id={down4 ? 'show-arrow' : 'hide-arrow'} onClick={clickDown4}><FontAwesomeIcon icon={faAngleDown} /></div>
                                     <div className='faqs-row-1-icon-up' id={col1 ? 'show-arrow' : 'hide-arrow'} onClick={clickCol1}><FontAwesomeIcon icon={faAngleUp} /></div>
@@ -142,15 +139,14 @@ export default function FAQs() {
                             </div>
                             {col1 &&
                                 <div className='faqs-row-1-desc'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet odio leo.
-                                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                    Currently we support only USDT-Tron. However, in a few months we will be supporting most of the major crypto currencies.
                                 </div>
                             }
                         </div>
 
                         <div className='faqs-1'>
                             <div className='faqs-row-2'>
-                                <div className='faqs-row-1-header'>What is Card Hub?</div>
+                                <div className='faqs-row-1-header'>How does alphaspace virtual card work?</div>
                                 <div className='angle-icon-wrap'>
                                     <div className='faqs-row-1-icon' id={down5 ? 'show-arrow' : 'hide-arrow'} onClick={clickDown5}><FontAwesomeIcon icon={faAngleDown} /></div>
                                     <div className='faqs-row-1-icon-up' id={col2 ? 'show-arrow' : 'hide-arrow'} onClick={clickCol2}><FontAwesomeIcon icon={faAngleUp} /></div>
@@ -158,15 +154,14 @@ export default function FAQs() {
                             </div>
                             {col2 &&
                                 <div className='faqs-row-1-desc'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet odio leo.
-                                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                   Alphaspace virtual cards can be used to make purchases in the same way as a physical bank card, but without the anxiety that comes with giving out your actual card’s information. Alphaspace virtual cards are not connected to your bank account but comes with a unique, 16-digit card number, CVV, and expiration and billing address. 
                                 </div>
                             }
                         </div>
 
                         <div className='faqs-1'>
                             <div className='faqs-row-1'>
-                                <div className='faqs-row-1-header'>What is Card Hub?</div>
+                                <div className='faqs-row-1-header'>Alphaspace is peace of mind.</div>
                                 <div className='angle-icon-wrap'>
                                     <div className='faqs-row-1-icon' id={down6 ? 'show-arrow' : 'hide-arrow'} onClick={clickDown6}><FontAwesomeIcon icon={faAngleDown} /></div>
                                     <div className='faqs-row-1-icon-up' id={col3 ? 'show-arrow' : 'hide-arrow'} onClick={clickCol3}><FontAwesomeIcon icon={faAngleUp} /></div>
@@ -174,8 +169,7 @@ export default function FAQs() {
                             </div>
                             {col3 &&
                                 <div className='faqs-row-1-desc'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet odio leo.
-                                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                  Worried that a merchant might bill you when you least expect it? Our system enables you to set customized spending limits on your virtual cards, so merchants can never authorize a transaction for more than you’ve agreed to spend for that period. 
                                 </div>
                             }
                         </div>

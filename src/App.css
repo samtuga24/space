@@ -19,7 +19,6 @@
 }
 body{
     /* animation: custom 5s infinite; */
-    scroll-behavior: smooth;
     background-color: #FFFFFF;
 }
 /* @keyframes custom{
@@ -34,9 +33,9 @@ body{
     }
 } */
 .home-wrapper{
-    height: 100vh;
+    /* height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto; */
 }
 .home-navbar{
     position: sticky;
@@ -948,14 +947,14 @@ button{
     position: relative;
     display: flex;
     align-items: center;
-    flex: 2;
+    flex: 6;
 }
 
 .faqs-row-2{
     position: relative;
     display: flex;
     align-items: center;
-    flex: 2;
+    flex: 5.5;
 }
 
 .faqs-row-1-icon{
@@ -978,7 +977,7 @@ button{
 .angle-icon-wrap{
     display: flex;
     align-items: center;
-    flex: 1;
+    flex: 0.5;
     position: relative;
     justify-content: end;
 }
@@ -993,7 +992,8 @@ button{
     font-weight: 600;
     font-size: 1.3vw;
     color: #121212;
-    flex: 1;
+    flex: 5.5;
+    width: 100%;
 }
 .faqs-row-1-desc{
     color: #4F4F4F;
@@ -1002,6 +1002,8 @@ button{
     font-size: 1.2vw;
     margin-top: 2vh;
 }
+
+
 .faqs-2{
     flex: 1;
     display: flex;

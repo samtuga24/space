@@ -8,7 +8,7 @@ import { faFacebookF, faTwitter, faLinkedinIn, faInstagram } from '@fortawesome/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Footer() {
     return (
-        <div className='footer-container'>
+        <div className='footer-container' id='footer'>
             <div className='footer-wrapper'>
                 <div className='footer-desc-wrap'>
                     <div className='footer-desc-header-wrap'>
@@ -23,10 +23,10 @@ export default function Footer() {
                 <div className='footer-connect-wrap'>
                     <div className='connect-header'>Connect on</div>
                     <div className='connect-icons-wrap'>
-                        <div className='connect-icon'><FontAwesomeIcon icon={faFacebookF} /></div>
-                        <div className='connect-icon'><FontAwesomeIcon icon={faTwitter} /></div>
-                        <div className='connect-icon'><FontAwesomeIcon icon={faLinkedinIn} /></div>
-                        <div className='connect-icon'><FontAwesomeIcon icon={faInstagram} /></div>
+                        <div className='connect-icon' onClick={() => { window.open("https://www.facebook.com/alphadotafrica", "_blank"); }}><FontAwesomeIcon icon={faFacebookF} /></div>
+                        <div className='connect-icon' onClick={() => { window.open("https://twitter.com/alphadotafrica", "_blank"); }}><FontAwesomeIcon icon={faTwitter} /></div>
+                        <div className='connect-icon' onClick={() => { window.open("https://www.linkedin.com/company/alphadotafrica/", "_blank"); }}><FontAwesomeIcon icon={faLinkedinIn} /></div>
+                        <div className='connect-icon' onClick={() => { window.open("https://www.instagram.com/alphadotafrica/", "_blank"); }}><FontAwesomeIcon icon={faInstagram} /></div>
                     </div>
                     <div className='policy p-list-item'>Privacy Policy</div>
                 </div>
@@ -40,10 +40,6 @@ export default function Footer() {
                 <div className='footer-contact-wrap'>
                     <div className='contact-header'>Contact</div>
                     <div className='contact-list-wrap'>
-                        <div className='contact-list-1'>
-                            <div className='contact-icon'><img src={call} alt="" /></div>
-                            <div className='contact-icon-desc'>(406) 555-0120</div>
-                        </div>
                         <div className='contact-list-1'>
                             <div className='contact-icon'><img src={mail} alt="" /></div>
                             <div className='contact-icon-desc'>support@alpha.africa</div>
